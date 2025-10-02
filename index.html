@@ -3,56 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <title>Boletim Escolar</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-image: url("fundo-da-escola.jpg");
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 50px;
+  <link rel="stylesheet" href="main.css">
 
-    
-    }
-
-    h1 {
-        color: black;
-    }
-
-
-    
-    input, button {
-      padding: 10px;
-      margin: 10px;
-      font-size: 16px;
-    }
-
-    #resultado {
-      margin-top: 20px;
-      font-weight: bold;
-      font-size: 35px;
-      color:black;
-    }
-
-    h2,form {
-        display:flex;
-        justify-content: center;
-    }
-
-    p {
-        font-size: 18px;
-    }
-    
-
-  </style>
 </head>
 <body>
 
   <h1>Verificador de Boletim</h1>
 
-  
-   
-  
   <input type="text" id="aluno" placeholder="Digite o nome do aluno">
   <input type="number" id="nota1" placeholder="Digite a primeira nota" />
   <input type="number" id="nota2" placeholder="Digite a segunda nota" />
@@ -60,34 +17,14 @@
 
   <div id="resultado"></div>
 
-  <script>
-    function calcularMedia() {
-  const nome = document.getElementById("aluno").value;
-  const nota1 = parseFloat(document.getElementById("nota1").value);
-  const nota2 = parseFloat(document.getElementById("nota2").value);
+  <h2>Boletim escolar</h2>
+  <p>Informe e-mail para receber o resultado</p>
+  <form>
+    <input type="email" name="email" placeholder="Seu email...">
+    <button type="submit">Subscribe</button>
+  </form>
 
-  const media = (nota1 + nota2) / 2;
-  let mensagem = "";
-
-  if (media >= 7) {
-    mensagem = `Parabéns, ${nome}! Sua média foi ${media}. Aprovado!`;
-  } else if (media >= 5) {
-    mensagem = `${nome}, sua média foi ${media}. Recuperação!`;
-  } else {
-    mensagem = `${nome}, sua média foi ${media}. Reprovado!`;
-  }
-
-  document.getElementById("resultado").innerHTML = mensagem;
-}
-
-  </script>
-
-<h2>Boletim escolar</h2>
-<p>Informe e-mail para receber o resultado</p>
-<form>
-    <input type="email" name="email placeholder="Seu email...>
-    <button type="submit">Subcribe</button>
-    <form>
+  <script src="main.js"></script>
 
 </body>
 </html>

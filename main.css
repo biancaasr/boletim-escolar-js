@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("fundo-da-escola.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+  
+  h1 {
+    color: black;
+  }
+  
+  input, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 35px;
+    color: black;
+  }
+  
+  h2, form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
